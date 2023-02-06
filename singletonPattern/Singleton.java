@@ -8,7 +8,7 @@ public class Singleton {
         // 생성자는 외부에서 호출못하게 private 으로 지정해야 한다.
     }
 
-    public static synchronized Singleton getInstance() {
+    public static Singleton getInstance() {
         return instance;
     }
 
