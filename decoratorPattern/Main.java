@@ -17,7 +17,7 @@ public class Main {
 
 
 
-        Component EriopiaAmericano = new WhippedCreamDecorator(new MochaSyrupDecorator(new MilkDecorator(new BaseComponent("EriopiaAmericano"))));
+        Component EriopiaAmericano = new WhippedCreamDecorator(new MochaSyrupDecorator(new MilkDecorator(new BaseComponent("EtiopiaAmericano"))));
         System.out.println(EriopiaAmericano.add());
         
         // Component americano = new WaterDecorator(new BaseComponent());
