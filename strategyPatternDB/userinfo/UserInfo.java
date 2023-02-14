@@ -1,12 +1,14 @@
-package strategyPatternDB;
+package strategyPatternDB.userinfo;
 
 public class UserInfo {
-    private String userId;
-    private String passwd;
-    private String userName;
-    public String getUserId() {
-        return userId;
-    }
+
+	private String userId;
+	private String passwd;
+	private String userName;
+
+	public String getUserId() {
+		return userId;
+	}
     public void setUserId(String userId) {
         this.userId = userId;
     }
@@ -22,4 +24,10 @@ public class UserInfo {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
+	public UserInfo(String id, String pw, String name) {
+		this.userId = id;
+		this.passwd = pw;
+		this.userName = name;
+	}
 }
