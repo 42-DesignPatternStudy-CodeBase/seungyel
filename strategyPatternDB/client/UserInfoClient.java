@@ -4,11 +4,9 @@ import strategyPatternDB.userinfo.dao.*;
 import strategyPatternDB.userinfo.dao.mssql.*;
 import strategyPatternDB.userinfo.dao.mysql.*;
 import strategyPatternDB.userinfo.dao.oracle.*;
-
-import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-
+import java.io.BufferedReader;
 import javax.management.*;
 
 public class UserInfoClient {
@@ -52,6 +50,11 @@ public class UserInfoClient {
 		userInfoDao.insert(user1);
 		userInfoDao.insert(user2);
 		userInfoDao.insert(user3);
+		userInfoDao.update(user1);
+		userInfoDao.update(user2);
+		userInfoDao.update(user3);
 		userInfoDao.delete(user1);
+		userInfoDao.delete(user2);
+		userInfoDao.delete(user3);
 	}
 }
