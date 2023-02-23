@@ -11,11 +11,9 @@ public abstract class NumberGenerator {
         observers.remove(observer);
     }
     public void notifyObservers() {
-        Iterator<Observer> obsIter = observers.iterator();
-        while (obsIter.hasNext()) {
-            Observer o = obsIter.next();
-            o.update(this); // this?
-        }
+        observers.forEach((observer) -> {
+            observer.update(this);
+        });
     }
 
     public abstract int getNumber();

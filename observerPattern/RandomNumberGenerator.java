@@ -10,10 +10,7 @@ public class RandomNumberGenerator extends NumberGenerator {
         return number;
     }
     public void execute() {
-        for (int i = 0; i < 10; i++) {
-            number = random.nextInt(20);
-            notifyObservers();
-        }
-    } 
+        number = random.nextInt(42);
+        notifyObservers();
+    }
 }
-
