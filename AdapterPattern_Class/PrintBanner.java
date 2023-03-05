@@ -8,7 +8,7 @@ public class PrintBanner extends Banner implements Print {
     public void printWeak() {
         showWithParen();
     }
-    
+
     public void printStrong() {
         showWithAster();
     }
