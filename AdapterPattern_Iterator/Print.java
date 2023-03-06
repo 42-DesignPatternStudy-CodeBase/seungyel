@@ -1,4 +1,4 @@
-package AdapterPattern_Class;
+package AdapterPattern_Iterator;
 
 public interface Print {
     public abstract void printWeak();

@@ -1,4 +1,4 @@
-package AdapterPattern_Class;
+package AdapterPattern_Iterator;
 
 public class Banner {
     private String string;
