@@ -1,4 +1,4 @@
-package AdapterPattern_Iterator;
+package adapterPattern_Inherit;
 
 public class PrintBanner extends Banner implements Print {
     public PrintBanner(String string) {
