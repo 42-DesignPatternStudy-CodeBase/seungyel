@@ -1,4 +1,4 @@
-package AdapterPattern;
+package adapterPattern.composition;
 
 public class PrintBanner implements Print {
     private Banner banner;

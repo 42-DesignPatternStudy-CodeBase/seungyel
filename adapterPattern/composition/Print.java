@@ -1,4 +1,4 @@
-package adapterPattern_Inherit;
+package adapterPattern.composition;
 
 public interface Print {
     public abstract void printWeak();

@@ -1,4 +1,4 @@
-package adapterPattern_Inherit;
+package adapterPattern.inheritance;
 
 public class Main {
     public static void main(String[] args) {
