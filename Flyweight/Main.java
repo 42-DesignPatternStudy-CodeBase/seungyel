@@ -1,7 +1,7 @@
 package Flyweight;
 
 public class Main {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
          BigString bs = new BigString("123abc123");
          bs.print();
     }
