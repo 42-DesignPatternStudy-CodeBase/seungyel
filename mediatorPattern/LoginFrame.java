@@ -1,5 +1,8 @@
 package mediatorPattern;
 
+import java.awt.event.*;
+import java.awt.*;
+
 public class LoginFrame extends Frame implements ActionListener, Mediator {
     private ColleagueCheckbox checkGuest;
     private ColleagueCheckbox checkLogin;
@@ -19,8 +22,10 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
         // 배치
         add(checkGuest);
         add(checkLogin);
-        add(new Label("Username:")); add(textUser);
-        add(new Label("Password:")); add(textPass);
+        add(new Label("Username:")); 
+        add(textUser);
+        add(new Label("Password:")); 
+        add(textPass);
         add(buttonOk);
         add(buttonCancel);
         // 유효/무효의 초기지정 
@@ -38,7 +43,8 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
         textUser = new ColleagueTextField("", 10);
         textPass = new ColleagueTextField("", 10);
         textPass.setEchoChar('*');
-        buttonOk = new ColleagueButton("OK"); buttonCancel = new ColleagueButton("Cancel"); 
+        buttonOk = new ColleagueButton("OK"); 
+        buttonCancel = new ColleagueButton("Cancel"); 
         // Mediator의 세트 
         checkGuest.setMediator(this); 
         checkLogin.setMediator(this); 
